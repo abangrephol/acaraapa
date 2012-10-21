@@ -1,0 +1,22 @@
+body{
+    margin:0 0 0 0;
+}
+#footer{
+    color: white;
+    height: 100px;
+    margin-left:0px; 
+    margin-bottom:0px; 
+    margin-right:0px; 
+    margin-top: 80%;
+    width: 100%; 
+    line-height: 20px; 
+    background: #000;
+}
+#nav{
+    color: white;
+    height: 40px;
+    margin:0 0 0 0 ; 
+    width: 100%; 
+    line-height: 20px; 
+    background: #000;
+}

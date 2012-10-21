@@ -12,10 +12,13 @@
     <body>
         <div id="container">
             <div id="nav">
-                <?php //$this->load->view('includes/nav'); ?>
+                <?php $this->load->view('includes/nav'); ?>
             </div>
             <div id="content">
                 <?php $this->load->view($main_content); ?>
+            </div>
+            <div id="footer">
+                <?php $this->load->view('includes/footer'); ?>
             </div>
         </div>
     </body>
