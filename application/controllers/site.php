@@ -7,6 +7,6 @@ class Site extends CI_Controller {
         $data['description'] ='';
         $data['keywords']='';
         $data['main_content'] = 'site/index';
-        $this->load->view('site/site',$data);
+        $this->load->view('includes/template',$data);
     }
 }
