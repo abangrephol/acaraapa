@@ -37,10 +37,10 @@
 $active_group = "default";
 $active_record = TRUE;
 
-$db['default']['hostname'] = "localhost";
-$db['default']['username'] = "root";
-$db['default']['password'] = "root";
-$db['default']['database'] = "ci_series";
+$db['default']['hostname'] = "142.0.244.253";
+$db['default']['username'] = "userSQLacara";
+$db['default']['password'] = "acaraapa";
+$db['default']['database'] = "dbacara";
 $db['default']['dbdriver'] = "mysql";
 $db['default']['dbprefix'] = "";
 $db['default']['pconnect'] = TRUE;
