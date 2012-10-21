@@ -1,21 +1,73 @@
 body{
     margin:0 0 0 0;
 }
+#nav{
+    vertical-align: middle;
+    color: white;
+    height: 40px;    
+    width: 100%; 
+    line-height: 20px; 
+    background: #eee;
+    border-bottom: 1px solid #D0D0D0;
+    -webkit-box-shadow: 0 0 8px #D0D0D0;
+}
+#nav-container{
+    width:960px;
+}
+
+#btnLogin{
+    margin: 3px 0 0 3px;    
+    
+    float: right;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #00aec3;
+    background: #00cee6;
+    -webkit-box-shadow: 0px 1px 1px #fff;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    width:100px;
+}
+#btnLogin a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px -1px 0px #008b9b;
+}
+#btnLogin a div{
+    width:100%;
+}
+#btnSignup{
+    margin: 3px 0 0 3px;    
+    
+    float: right;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #df9d00;
+    background: #ffb400;
+    -webkit-box-shadow: 0px 1px 1px #fff;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    width:100px;
+}
+#btnSignup a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px -1px 0px #008b9b;
+}
+#btnSignup a div{
+    width:100%;
+}
+#content{
+    width:960px;
+    text-align: center;
+}
 #footer{
     color: white;
     height: 100px;
     margin-left:0px; 
     margin-bottom:0px; 
     margin-right:0px; 
-    margin-top: 80%;
-    width: 100%; 
-    line-height: 20px; 
-    background: #000;
-}
-#nav{
-    color: white;
-    height: 40px;
-    margin:0 0 0 0 ; 
+    margin-top: 30%;
     width: 100%; 
     line-height: 20px; 
     background: #000;
