@@ -7,6 +7,7 @@
         <meta name="keywords" content="<?php echo $keywords; ?>" />
         <meta name="revisit-after" content="7 days" />
         <meta name="ROBOTS" content="all" />
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <title><?php echo $title;?></title>
     </head>
     <body>

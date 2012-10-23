@@ -82,3 +82,18 @@ body{
     line-height: 20px; 
     background: #000;
 }
+.errors {
+    color:red;
+}
+.right{
+    float:right;
+}
+.left{
+    float: left;
+}
+.center{
+    text-align: center;
+}
+.indent{
+    padding-left: 5em;
+}
