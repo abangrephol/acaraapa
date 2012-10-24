@@ -7,7 +7,7 @@
         <meta name="keywords" content="<?php echo $keywords; ?>" />
         <meta name="revisit-after" content="7 days" />
         <meta name="ROBOTS" content="all" />
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script-->
         <title><?php echo $title;?></title>
     </head>
     <body>
@@ -18,9 +18,9 @@
             <div id="content">
                 <?php $this->load->view($main_content); ?>
             </div>
-            <div id="footer">
+            <!--div id="footer">
                 <?php $this->load->view('includes/footer'); ?>
-            </div>
+            </div-->
         </div>
     </body>
 </html>

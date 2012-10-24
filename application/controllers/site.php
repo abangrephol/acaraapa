@@ -9,4 +9,5 @@ class Site extends CI_Controller {
         $data['main_content'] = 'site/index';
         $this->load->view('includes/template',$data);
     }
+    
 }

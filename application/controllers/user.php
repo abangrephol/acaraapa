@@ -16,13 +16,18 @@ class User extends CI_Controller {
         $data['main_content'] = 'user/login';
         $this->load->view('includes/template',$data);
     }
-    function login_act(){
-        $this->load->model('user_model');
+    function login_act(){        
+        if($this->input->post('submit') == "Daftar") { 
+            redirect(base_url().'user/registration');
+        } else {
+           $this->load->model('user_model');
         $this->form_validation->set_rules('username','Username','trim|required');
         $this->form_validation->set_rules('password','Password','trim|required');
         if($this->form_validation->run()==false){
             $this->index();
-        }else{redirect('site/index');}
+        }else{redirect('site/index');} // do something with direct payment
+        }
+        
     }
     function registration(){
         $this->load->model('User_model');

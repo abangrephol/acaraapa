@@ -1,3 +1,74 @@
+@font-face
+{
+font-family: mp-bold;
+src: url('mpb.otf'); /* IE9+ */
+}
+
+
+/* Index Page Start */
+.indexContainer{
+    width: 100%;
+    margin-top: 20px;
+}
+#divLogin {
+    font: 12px "arial";
+    line-height: 20px;
+    padding: 10px;
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 5px #EEE;
+    box-shadow: 0 0 5px #EEE;    
+}
+#divLogin #tblHomeLogin{
+    width:100%;
+}
+#divLogin #searchTitle{
+    line-height: 30px;
+    font: 25px "mp-bold";
+}
+#divLogin .seInput{
+    
+    width: 180px;
+    line-height: 20px;
+    padding: 5px;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+}
+
+#divLogin #loginUsername { width:90%; }
+#divLogin #loginPassword { width:90%; }
+#divLogin .seCari{
+    color: #fff;
+    background : #fd9111;
+    width:100px;
+    padding: 5px;
+    border: 1px solid #fd9111;
+    border-radius: 4px;
+
+}
+#divLogin .seMasuk{
+    cursor: pointer;
+    color: #fff;
+    background : #0079d7;
+    width:100px;
+    padding: 5px;
+    border: 1px solid #0079d7;
+    border-radius: 4px;
+
+}
+#divLogin .seDaftar{
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    background : #05a201;
+    width:100px;
+    padding: 5px;
+    border: 1px solid #05a201;
+    border-radius: 4px;
+
+}
+/* Index Page End */
+
 body{
     margin:0 0 0 0;
 }
@@ -68,8 +139,7 @@ body{
     box-shadow: inset 0px 1px 1px rgba(255,255,255,0.4);
 }
 #content{
-    width:960px;
-    text-align: center;
+    width:100%;
 }
 #footer{
     color: white;
