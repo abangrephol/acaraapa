@@ -107,6 +107,27 @@ class User extends CI_Controller {
             }else{echo 'mail error';}*/
         }
     }
+    function profil(){
+        $data['title'] = 'Profil Page';
+        $data['description'] ='';
+        $data['keywords']='';
+        $data['main_content'] = 'user/profil';
+        $this->load->view('includes/template',$data);
+    }
+    function favorit(){
+        $data['title'] = 'favorit Page';
+        $data['description'] ='';
+        $data['keywords']='';
+        $data['main_content'] = 'user/favorit';
+        $this->load->view('includes/template',$data);
+    }
+    function selesai(){
+        $data['title'] = 'selesai Page';
+        $data['description'] ='';
+        $data['keywords']='';
+        $data['main_content'] = 'user/selesai';
+        $this->load->view('includes/template',$data);
+    }
     
     
     
