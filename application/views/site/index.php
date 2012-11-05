@@ -1,5 +1,31 @@
+<div class="row">
+    <div class="eightcol">
+    asdf
+    </div>
+    <div class="fourcol last">
+        <div class="divLogin">
+            <?php echo form_open(''); ?>
+            <div class="tblHomeSearch">
+                <div class="bT">Cari event yang anda suka</div>
+                <div class="left"><?php echo form_input(array('name'=>'namaevent','id'=>'namaevent','class'=>'seInput txtInp','value'=>'Masukkan Nama Event','onFocus'=>'cInp(this,\'Masukkan Nama Event\');')); ?></div>
+                <div class="left"><?php echo form_dropdown('kategori',array('Pilih kategori'),'Pilih kategori','id="kategori" class="seInput txtInp"'); ?></div>
+                <div class="center"><?php echo form_submit('submit','Cari','class="seCari"'); ?></div>                
+            </div> 
+            <?php echo form_close(); ?>
+            <div class="mT center">atau</div>
+            <?php echo form_open('user/login_act'); ?>
+            <div class="tblHomeLogin">
+                <div><?php echo form_input(array('name'=>'username','id'=>'loginUsername','class'=>'seInput txtInp','value'=>'Username')); ?></div>
+                <div><?php echo form_input(array('name'=>'password','id'=>'loginPassword','class'=>'seInput txtInp','value'=>'Password')); ?></div>
+                <div><?php echo form_checkbox('remember', 'accept', FALSE); ?> Remember me &nbsp;|&nbsp;<a href="">Forgot Your Password ?</a></div>
+                <div><?php echo form_submit('submit','Masuk','class="seMasuk"'); ?> &nbsp;<?php echo form_submit('submit','Daftar','class="seDaftar"'); ?></div>
+            </div>
+            <?php echo form_close(); ?>        
+        </div>
+    </div>
+</div>
 <div class="indexContainer" align="center">
-<table width="940">
+<!--table width="940">
     <tr>
         <td width="600" valign="top">
             <table width="100%" border="1">
@@ -40,12 +66,12 @@
                         <td align="left"><?php echo form_submit('submit','Cari','class="seCari"'); ?></td>
                     </tr>
                     <tr>
-                    <td colspan="2">---------</td>
+                    <td colspan="2"></td>
                     </tr>
                 </table>
             <?php echo form_close(); ?>
             
-            <?php echo form_open('user/login_act'); ?>
+            <?php echo form_open('login/login_act'); ?>
                 <table id="tblHomeLogin">
                     <tr>
                         <td align="left"><?php echo form_input(array('name'=>'username','id'=>'loginUsername','class'=>'seInput')); ?></td>
@@ -67,5 +93,5 @@
     </tr>
 
 
-</table>
+</table-->
  </div>
