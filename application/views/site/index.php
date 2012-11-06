@@ -1,97 +1,40 @@
-<div class="row">
-    <div class="eightcol">
-    asdf
+<div class="eventThumb span8">    
+    <div class="row-fluid">    
+        <li class="span12">
+            <div class="thumbnail"></div>
+        </li>
+        <ul class="thumbnails">
+            <li class="span3">
+                <div class="thumbnail"></div>
+            </li>
+            <li class="span3">
+                <div class="thumbnail"></div>
+            </li>
+            <li class="span3">
+                <div class="thumbnail"></div>
+            </li>
+            <li class="span3">
+                <div class="thumbnail"></div>
+            </li>                
+        </ul>
     </div>
-    <div class="fourcol last">
-        <div class="divLogin">
-            <?php echo form_open(''); ?>
-            <div class="tblHomeSearch">
-                <div class="bT">Cari event yang anda suka</div>
-                <div class="left"><?php echo form_input(array('name'=>'namaevent','id'=>'namaevent','class'=>'seInput txtInp','value'=>'Masukkan Nama Event','onFocus'=>'cInp(this,\'Masukkan Nama Event\');')); ?></div>
-                <div class="left"><?php echo form_dropdown('kategori',array('Pilih kategori'),'Pilih kategori','id="kategori" class="seInput txtInp"'); ?></div>
-                <div class="center"><?php echo form_submit('submit','Cari','class="seCari"'); ?></div>                
-            </div> 
-            <?php echo form_close(); ?>
-            <div class="mT center">atau</div>
-            <?php echo form_open('user/login_act'); ?>
-            <div class="tblHomeLogin">
-                <div><?php echo form_input(array('name'=>'username','id'=>'loginUsername','class'=>'seInput txtInp','value'=>'Username')); ?></div>
-                <div><?php echo form_input(array('name'=>'password','id'=>'loginPassword','class'=>'seInput txtInp','value'=>'Password')); ?></div>
-                <div><?php echo form_checkbox('remember', 'accept', FALSE); ?> Remember me &nbsp;|&nbsp;<a href="">Forgot Your Password ?</a></div>
-                <div><?php echo form_submit('submit','Masuk','class="seMasuk"'); ?> &nbsp;<?php echo form_submit('submit','Daftar','class="seDaftar"'); ?></div>
-            </div>
-            <?php echo form_close(); ?>        
-        </div>
+</div>    
+<div class="span4 divLogin">
+    <?php echo form_open(''); ?>
+    <div class="tblHomeSearch">
+        <div class="lead"><center>Cari event yang anda suka</center></div>
+        <div><?php echo form_input(array('name'=>'namaevent','id'=>'namaevent','class'=>'span12','placeholder'=>'Masukkan Nama Event')); ?></div>
+        <div><?php echo form_dropdown('kategori',array('Pilih kategori'),'Pilih kategori','id="kategori" class="span12"'); ?></div>
+        <div><?php echo form_submit('submit','   Cari   ','class="btn btn-warning span12"'); ?></div>                
+    </div> 
+    <?php echo form_close(); ?>
+    <hr />
+    <?php echo form_open('user/login_act'); ?>
+    <div class="tblHomeLogin">
+        <div><?php echo form_input(array('name'=>'username','id'=>'loginUsername','class'=>'span12','placeholder'=>'Username')); ?></div>
+        <div><?php echo form_password(array('name'=>'password','id'=>'loginPassword','class'=>'span12','placeholder'=>'Password')); ?></div>
+        <div><?php echo form_checkbox('remember', 'accept', FALSE); ?> Remember me &nbsp;|&nbsp;<a href="">Forgot Your Password ?</a></div>
+        <div class="row-fluid"><?php echo form_submit('submit','Masuk','class="btn span6"'); ?> <?php echo form_submit('submit','Daftar','class="btn btn-primary span6"'); ?></div>
     </div>
+    <?php echo form_close(); ?>        
 </div>
-<div class="indexContainer" align="center">
-<!--table width="940">
-    <tr>
-        <td width="600" valign="top">
-            <table width="100%" border="1">
-                <tr>
-                    <td colspan="4">
-                    -
-                    </td>
-                </tr>
-                <tr>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-            </table>
-        </td>
-        <td valign="top">
-            <div id="divLogin">
-            <?php echo form_open(''); ?>
-                <table id="tblHomeSearch">
-                    <tr>
-                        <td colspan="2"><span id="searchTitle">Cari event yang anda suka</span></td>
-                    </tr>
-                    <tr>
-                        <td align="right">Nama Event&nbsp;</td>
-                        <td align="left"><?php echo form_input(array('name'=>'namaevent','id'=>'namaevent','class'=>'seInput')); ?></td>
-                    </tr>
-                        <td align="right">Kategori&nbsp;</td>
-                        <td align="left"><?php echo form_dropdown('kategori',array('Pilih kategori'),'Pilih kategori','id="kategori" class="seInput"'); ?></td>
-                    <tr>
-                        <td colspan="2">-</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">-</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td align="left"><?php echo form_submit('submit','Cari','class="seCari"'); ?></td>
-                    </tr>
-                    <tr>
-                    <td colspan="2"></td>
-                    </tr>
-                </table>
-            <?php echo form_close(); ?>
-            
-            <?php echo form_open('login/login_act'); ?>
-                <table id="tblHomeLogin">
-                    <tr>
-                        <td align="left"><?php echo form_input(array('name'=>'username','id'=>'loginUsername','class'=>'seInput')); ?></td>
-                    </tr>
-                    <tr>
-                        <td align="left"><?php echo form_input(array('name'=>'password','id'=>'loginPassword','class'=>'seInput')); ?></td>
-                    </tr>
-                    <tr>
-                        <td align="left"><?php echo form_checkbox('remember', 'accept', FALSE); ?> Remember me &nbsp;|&nbsp;
-                        <a href="">Forgot Your Password ?</a></td>
-                    </tr>
-                    <tr>
-                        <td align="left"><?php echo form_submit('submit','Masuk','class="seMasuk"'); ?> &nbsp;<?php echo form_submit('submit','Daftar','class="seDaftar"'); ?></td>
-                    </tr>
-                </table>
-             <?php echo form_close(); ?>
-            </div>            
-        </td>
-    </tr>
-
-
-</table-->
- </div>

@@ -7,11 +7,7 @@
         src: url('mpb.otf'); /* IE9+ */
     }
 
-	body {
-		
-	}
-    .divLogin {
-        margin:0.5em;
+    .divLogin {        
         font: 12px "arial";
         line-height: 34px;
         padding: 10px;
@@ -27,156 +23,25 @@
     .center{
         text-align: center;
     }
-    input,select{        
-        margin: 0.1em;
-        padding: 0;
-        line-height: 20px;
-        padding: 5px 5px 5px 5px;
-        border: 1px solid #DDD;
-        border-radius: 4px;
-    }
-    .txtInp{
-        width:95%;
-    }           
-    .divLogin .tblHomeLogin{
-        width:100%;
-    }
-    .bT{
-        color:#333;
-        margin: 0.5em 0 0.5em 0;
-        width: 100%;
-        text-align: center;
-        line-height: 30px;
-        font: 22px "verdana";
-    }
-    .mT{
-        color:#ccc;
-        margin: 0.5em 0 0.5em 0;
-        width: 100%;
-        text-align: center;
-        line-height: 30px;
-        font: 18px "verdana";
-    }
-    .sT{
-        color:#ccc;
-        margin: 0.5em 0 0.5em 0;
-        width: 100%;
-        text-align: center;
-        line-height: 30px;
-        font: 16px "verdana";
-    }    
-    .divLogin .seCari{
-        color: #fff;
-        background : #fd9111;
-        width:45%;
-        padding: 5px;
-        border: 1px solid #fd9111;
-        border-radius: 4px;
-    
-    }
-    .divLogin .seMasuk{
-        cursor: pointer;
-        color: #fff;
-        background : #0079d7;
-        width:45%;
-        padding: 5px;
-        border: 1px solid #0079d7;
-        border-radius: 4px;
-    
-    }
-    .divLogin .seDaftar{
-        text-decoration: none;
-        cursor: pointer;
-        color: #fff;
-        background : #05a201;
-        width:45%;
-        padding: 5px;
-        border: 1px solid #05a201;
-        border-radius: 4px;
-    
-    }
-    /* Index Page End */
-    
-    .nav{
-        vertical-align: middle;
-        color: white;
-        height: 40px;    
-        width: 100%; 
-        line-height: 20px; 
-        background: #eee;
-        border-bottom: 1px solid #D0D0D0;
-        -webkit-box-shadow: 0 0 8px #D0D0D0;
-    }
-    #nav-container{
-        width:960px;
-    }
-    
-    #btnLogin{
-        margin: 3px 0 0 3px;    
-        
-        float: right;
-        line-height: 30px;
-        text-align: center;
-        border: 1px solid #00aec3;
-        background: #00cee6;
-        box-shadow: 0px 1px 1px #ccc;
-        -webkit-box-shadow: 0px 1px 1px #ccc;
-        border-radius:4px;
-        -moz-border-radius:4px;
-        width:100px;
-    }
-    #btnLogin a{
-        text-decoration: none;
-        color: white;
-        text-shadow: 0px 1px 0px rgba(0,0,0,0.4);
-        
-    }
-    #btnLogin a div{
-        width:100%;
-        border-radius:4px;
-        -moz-border-radius:4px;
-        box-shadow: inset 0px 1px 1px rgba(255,255,255,0.4);
-    }
-    #btnSignup{
-        margin: 3px 0 0 3px;    
-        
-        float: right;
-        line-height: 30px;
-        text-align: center;
-        border: 1px solid #df9d00;
-        background: #ffb400;
-        -webkit-box-shadow: 0px 1px 1px #ccc;
-        box-shadow: 0px 1px 1px #ccc;
-        border-radius:4px;
-        -moz-border-radius:4px;
-        width:100px;
-    }
-    #btnSignup a{
-        text-decoration: none;
-        color: white;
-        text-shadow: 0px 1px 0px rgba(0,0,0,0.4);
-    }
-    #btnSignup a div{
-        width:100%;
-        border-radius:4px;
-        -moz-border-radius:4px;
-        -webkit-box-shadow: inset 0px 1px 1px rgba(255,255,255,0.4);
-        box-shadow: inset 0px 1px 1px rgba(255,255,255,0.4);
-    }
-    #content{
-        width:100%;
-    }
+        /* Index Page End */        
     #footer{
-        color: white;
-        height: 100px;
-        margin-left:0px; 
-        margin-bottom:0px; 
-        margin-right:0px; 
-        margin-top: 30%;
-        width: 100%; 
-        line-height: 20px; 
-        background: #000;
+        margin-top:20px;
+        height:200px; 
+        background: #eee;
     }
+    @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+        .eventThumb{
+            visibility: hidden;
+            height: 0;
+        }
+      }
+
     /* Index Page End    */
     
 /* ============================= */

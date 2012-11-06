@@ -1,6 +1,12 @@
-<div id="nav"  align="center">
-    <div id="nav-container">
-        <div id="btnLogin"><a href="<?php echo base_url();?>login"><div>Login</div></a></div>
-        <div id="btnSignup"><a href="<?php echo base_url();?>register"><div>Sign Up</div></a></div>
-    </div>    
-</div>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">            
+        <div class="container">            
+            <a class="brand" href="<?php echo base_url();?>"><font color="white">Agenda</font><font color="41ab34">Anda</font></a>
+            <div class="right">
+                <button class="btn">Login</button>
+                <button class="btn btn-primary">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</div>    
+<br /><br /><br />
