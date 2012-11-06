@@ -12,7 +12,8 @@ class Kota extends ORM {
 
                 self::$relationships = array (
                         'acara'                  =>     ORM::has_many('\\Model\\Acara'),
-                        'user'                   =>     ORM::has_many('\\Model\\User')
+                        'user'                   =>     ORM::has_many('\\Model\\User'),
+                        'provinsi'               =>     ORM::belongs_to('\\Model\\Provinsi')
                         
                 );
 

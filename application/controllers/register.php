@@ -14,28 +14,28 @@ class Register extends CI_Controller {
         $data['title'] = 'Registration Page';
         $data['description'] ='';
         $data['keywords']='';
-        $data['main_content'] = 'register';
+        $data['main_content'] = 'register/register';
         $this->load->view('includes/template',$data);
     } 
     function profil(){
         $data['title'] = 'Profil Page';
         $data['description'] ='';
         $data['keywords']='';
-        $data['main_content'] = 'user/profil';
+        $data['main_content'] = 'register/profil';
         $this->load->view('includes/template',$data);
     }
     function favorit(){
         $data['title'] = 'favorit Page';
         $data['description'] ='';
         $data['keywords']='';
-        $data['main_content'] = 'user/favorit';
+        $data['main_content'] = 'register/favorit';
         $this->load->view('includes/template',$data);
     }
     function selesai(){
         $data['title'] = 'selesai Page';
         $data['description'] ='';
         $data['keywords']='';
-        $data['main_content'] = 'user/selesai';
+        $data['main_content'] = 'register/selesai';
         $this->load->view('includes/template',$data);
     }    
     function create_member(){

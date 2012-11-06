@@ -7,20 +7,36 @@ class Event extends CI_Controller {
         parent::__construct();
         
     }
-    public function index()
+    public function all()
         {
                 // load all of our posts
                 $data['posts'] = Model\Acara::all();
 
                 // build our blog table
-                $data['content'] = $this->load->view('event/event_list', $data, TRUE);
+                $data['content'] = $this->load->view('event/all', $data, TRUE);
 
                 // show the main template
                 //$this->load->view('includes/template', $data);
                 $data['title'] = 'View Page';
                 $data['description'] ='';
                 $data['keywords']='';
-                $data['main_content'] = 'event/event_list';
+                $data['main_content'] = 'event/all';
+                $this->load->view('includes/template',$data);
+        }
+    public function index()
+        {
+                // load all of our posts
+                $data['posts'] = Model\Acara::all();
+
+                // build our blog table
+                $data['content'] = $this->load->view('event/all', $data, TRUE);
+
+                // show the main template
+                //$this->load->view('includes/template', $data);
+                $data['title'] = 'View Page';
+                $data['description'] ='';
+                $data['keywords']='';
+                $data['main_content'] = 'event/all';
                 $this->load->view('includes/template',$data);
         }
     public function view($id = 0)

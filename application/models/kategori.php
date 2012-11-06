@@ -10,11 +10,9 @@ class Kategori extends ORM {
         function _init()
         {
 
-                /*self::$relationships = array (
-                        'acara'                  =>     ORM::has_many('\\Model\\Acara'),
-                        'kota'                  =>     ORM::has_many('\\Model\\Kota'),
-                        'user'                   =>     ORM::has_many('\\Model\\User')
-                );*/
+                self::$relationships = array (
+                      'kategoriacara'                   =>     ORM::has_many('\\Model\\Kategoriacara')
+                );
 
                 self::$fields = array(
                         'IDKATEGORI'                    =>              ORM::field('bigint[20]'),
