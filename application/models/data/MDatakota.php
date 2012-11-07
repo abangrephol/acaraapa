@@ -4,7 +4,10 @@ class MDatakota extends CI_Model {
     function __construct()
     {
        parent ::__construct();       
-    }    
+    }
+    function index(){
+        
+    }       
     function get_provinsi()
     {
         $this->db->order_by("NAMAPROVINSI", "asc");

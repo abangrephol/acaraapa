@@ -19,7 +19,7 @@ class Report extends ORM {
                 );
 
                 self::$fields = array(
-                        'IDREPORT'                      =>              ORM::field('bigint[20]'),
+                        'IDREPORT'                      =>              ORM::field('auto[19]'),
                         'REPORTDESC'                    =>              ORM::field('text'),
                         'REPORTTIME'                    =>              ORM::field('datetime'),
                         

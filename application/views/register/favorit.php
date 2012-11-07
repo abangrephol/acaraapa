@@ -1,40 +1,46 @@
-<div style="float: left;">1</div>
-<div style="float: left;">2</div>
-<div style="float: left;">3</div>
-<div>4</div>
-<?php form_open('');?>
-<div id="divFavorit" style="width:470px ;height:470px ;">
-    <div style="width: 100%;">
-        Pilih Event Favoritmu
+<div class="span5 boxes registerBG">
+    <div class="row-fluid"><div class="span12"><img src="<?php echo base_url();?>img/reg/step-3.png" /></div></div>    
+    <div class="row-fluid">
+        <div class="span12"><hr /></div>
     </div>
-    <div style="float: left;width: 50%;">
-        <?php echo form_checkbox('agama', 'accept', FALSE);
-        echo form_label('Agama','agama');
+    <div class="row-fluid">
+        <span class="span12 lead">
+            Pilih Kategori yang menjadi favorit anda
+        </span>
+    </div>
+    <?php 
+        echo form_open('register/add_fav');
+    ?>
+    <div class="row-fluid show-grid">
+        <?php 
+        
+            $i=0;
+            foreach($kategori as $dk){
+                $i++;
+                echo "<div class='span3' rel='tooltip' data-placement='top' data-original-title='".$dk->DESKRIPSIKATEGORI."'>
+                        <label class='checkbox'>"
+                        .form_checkbox('fav[]', $dk->IDKATEGORI).$dk->NAMAKATEGORI
+                        ."</label></div>";
+                if($i==4){
+                    $i=0;
+                    echo '</div><div class="row-fluid show-grid">';
+                }
+            }
         ?>
     </div>
-    <div style="float: left;width: 50%;">
-        <?php echo form_checkbox('pendidikan', 'accept', FALSE);
-        echo form_label('Pendidikan/Seminar','pendidikan');
-        ?>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("[rel=tooltip]").tooltip();
+        });
+    </script>
+    <div class="row-fluid">
+        <div class="span4"></div>     
+        <div class="span8 right">
+            
+            <button class="btn btn-link">Lewati</button>&nbsp;
+            <input type="submit" value="Langkah Berikutnya" class="btn btn-success" />
+            
+        </div>
     </div>
-    <div style="float: left;width: 50%;">
-        <?php echo form_checkbox('konser', 'accept', FALSE);
-        echo form_label('Konser','konser');
-        ?>
-    </div>
-    <div style="float: left;width: 50%;">
-        <?php echo form_checkbox('pesta', 'accept', FALSE);
-        echo form_label('Pesta Rakyat/Pameran','konser');
-        ?>
-    </div>
-    <div style="float: left;width:25% ;">
-        <a href="">Kembali</a>
-    </div>
-    <div style="float: left;width:25% ;">
-        <a href="">Lewati</a>
-    </div>
-    <div style="float: left;width:50% ;">
-        <a href="">Berikutnya</a>
-    </div>
+    <?php echo form_close();?>
 </div>
-<?php echo form_close(); ?>

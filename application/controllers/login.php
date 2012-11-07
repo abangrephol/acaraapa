@@ -18,7 +18,7 @@ class Login extends CI_Controller {
     }
     function login_act(){        
         if($this->input->post('submit') == "Daftar") { 
-            redirect(base_url().'user/registration');
+            redirect(base_url().'register');
         } else {
            $this->load->model('user_model');
         $this->form_validation->set_rules('username','Username','trim|required');

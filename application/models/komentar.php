@@ -18,7 +18,7 @@ class Komentar extends ORM {
                 );
 
                 self::$fields = array(
-                        'IDKOMENTAR'                            =>              ORM::field('bigint[20]'),
+                        'IDKOMENTAR'                            =>              ORM::field('auto[19]'),
                         'KOMENTAR'                              =>              ORM::field('text'),
                         'DATETIMEKOMENTAR'                      =>              ORM::field('datetime'),
                         

@@ -1,14 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
-class Datakota extends CI_Controller {
-    
-     function __construct()
-    {
-        parent::__construct();
+use \data;
+class Datakota extends CI_Controller {    
         
-    }
-        
-    function grab_kota()
+    public function grab_kota()
     {
         $this->load->model('data/MDatakota');
             $result = $this->MDatakota->get_kota($this->input->post('provinsi'));
@@ -28,7 +22,7 @@ class Datakota extends CI_Controller {
             }
         
     }
-    function grab_prov(){
+    public function grab_prov(){
         $this->load->model('data/MDatakota');
         $ambil_provinsi = $this->MDatakota->get_provinsi();
         if(is_array($ambil_provinsi))

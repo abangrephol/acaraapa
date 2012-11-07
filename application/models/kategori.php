@@ -15,7 +15,7 @@ class Kategori extends ORM {
                 );
 
                 self::$fields = array(
-                        'IDKATEGORI'                    =>              ORM::field('bigint[20]'),
+                        'IDKATEGORI'                    =>              ORM::field('auto[19]'),
                         'NAMAKATEGORI'                  =>              ORM::field('varchar[50]'),
                         'DESKRIPSIKATEGORI'             =>              ORM::field('text'),
                 );

@@ -19,7 +19,7 @@
         </ul>
     </div>
 </div>    
-<div class="span4 divLogin">
+<div class="span4 boxes">
     <?php echo form_open(''); ?>
     <div class="tblHomeSearch">
         <div class="lead"><center>Cari event yang anda suka</center></div>
@@ -29,7 +29,7 @@
     </div> 
     <?php echo form_close(); ?>
     <hr />
-    <?php echo form_open('user/login_act'); ?>
+    <?php echo form_open('login/login_act'); ?>
     <div class="tblHomeLogin">
         <div><?php echo form_input(array('name'=>'username','id'=>'loginUsername','class'=>'span12','placeholder'=>'Username')); ?></div>
         <div><?php echo form_password(array('name'=>'password','id'=>'loginPassword','class'=>'span12','placeholder'=>'Password')); ?></div>

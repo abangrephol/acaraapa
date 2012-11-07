@@ -18,7 +18,7 @@ class Gambaracara extends ORM {
                 );
 
                 self::$fields = array(
-                        'IDGAMBAR'                          =>              ORM::field('bigint[20]'),
+                        'IDGAMBAR'                          =>              ORM::field('auto[19]'),
                         'NAMAGAMBAR'                        =>              ORM::field('varchar[50]'),
                         'DESKRIPSIGAMBAR'                   =>              ORM::field('text'),
                         'DATETIMEGAMBAR'                    =>              ORM::field('datetime'),

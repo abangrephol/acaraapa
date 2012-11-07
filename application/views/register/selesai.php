@@ -1,17 +1,23 @@
-<div id="divSelesai" style="width:470px ;height:470px ;">
-    <div style="width: 100%;">
-        Registrasi Berhasil        
+<div class="span5 boxes registerBG">
+    <div class="row-fluid"><div class="span12"><img src="<?php echo base_url();?>img/reg/step-4.png" /></div></div>    
+    <div class="row-fluid">
+        <div class="span12"><hr /></div>
     </div>
-    <div style="float: left;">
-        Sukseskan event anda dalam &nbsp;
+    <div class="row-fluid">
+        <span class="span12 center">
+            <p class="lead">Registrasi Berhasil</p>
+            <p>Sukseskan event anda dalam <b>Agenda<font color="41ab34">Anda</font></b></p>
+        </span>
     </div>
-    <div style="float: left;">
-        agendaanda <br />
+    <div class="row-fluid">
+        
     </div>
-    <div style="float: left;width: 75%;">
-        <a href="">Kembali</a>
-    </div>
-    <div style="float: left;">
-        <a href="">Selesai</a>
+    <div class="row-fluid">
+        <div class="span4"></div>     
+        <div class="span8 right">
+            <?php echo form_open("user");?>
+            <input type="submit" value="Selesai" class="btn btn-success" />            
+            <?php echo form_close();?>
+        </div>
     </div>
 </div>

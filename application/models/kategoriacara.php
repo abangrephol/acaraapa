@@ -17,7 +17,7 @@ class Kategoriacara extends ORM {
                 );
 
                 self::$fields = array(
-                        'IDKATACARA'                    =>              ORM::field('bigint[20]'),
+                        'IDKATACARA'                    =>              ORM::field('auto[19]'),
                         
                 );
 

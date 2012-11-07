@@ -12,7 +12,7 @@
         <link href="<?php echo base_url();?>css/bootstrap.min.css" rel="stylesheet">
     	<link href="<?php echo base_url();?>css/bootstrap-responsive.min.css" rel="stylesheet">
         <script src="<?php echo base_url();?>js/jquery.min.js"></script>
-        <script src="<?php echo base_url();?>js/bootstrap.min.js"></script>
+        
         <title><?php echo $title;?></title>
     </head>
     <body>        
@@ -20,7 +20,7 @@
         <div id="wrap">            
             <div class="row-fluid">                
                 <div class="container">                                   
-                        <?php $this->load->view($main_content); ?>                
+                        <?php $this->load->view($main_content); ?>                                 
                 </div>                        
             </div> 
             <div id="push"></div>
@@ -28,6 +28,7 @@
          
         <div id="footer">            
                 <?php $this->load->view('includes/footer'); ?>            
-        </div>        
+        </div>   
+        <script src="<?php echo base_url();?>js/bootstrap.js"></script>     
     </body>
 </html>

@@ -6,8 +6,19 @@
         font-family: mp-bold;
         src: url('mpb.otf'); /* IE9+ */
     }
-
-    .divLogin {        
+    .registerBG{
+        background-color: #f1f1f1;
+    }
+    .circle{
+        height:40px;
+        width:40px;
+        background-color: #ddd;
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold; 
+                       
+    }
+    .boxes {        
         font: 12px "arial";
         line-height: 34px;
         padding: 10px;
@@ -16,6 +27,32 @@
         -webkit-box-shadow: 0 0 5px #EEE;
         box-shadow: 0 0 5px #EEE;    
     }	
+    .lBox{
+        
+       font: 12px "arial";
+        line-height: 34px;
+        border: 1px solid #DDD;
+        border-radius: 8px;
+        -webkit-box-shadow: 0 0 5px #EEE;
+        box-shadow: 0 0 5px #EEE;  
+    }
+    .elBox{
+        margin-top:-20px;
+        padding:10px;
+        border-top:0;
+        border-bottom: 1px solid #DDD;
+        border-left: 1px solid #DDD;
+        border-right: 1px solid #DDD;
+        
+        
+    }
+    .hrEl{
+        margin-left:-10px;
+        margin-right:-10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
     /* Index Page Start   */
     .right{
         text-align: right;

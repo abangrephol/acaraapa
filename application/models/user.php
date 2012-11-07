@@ -26,6 +26,7 @@ class User extends ORM {
                         'PASSWORD'                  =>              ORM::field('varchar[50]'),
                         'EMAIL'                     =>              ORM::field('varchar[50]'),
                         'FULLNAME'                  =>              ORM::field('varchar[50]'),
+                        'FOTO'                     =>              ORM::field('varchar[50]'),
                         'ACTIVATION'                =>              ORM::field('varchar[32]'),
                         'GENDER'                    =>              ORM::field('varchar[20]'),
                 );
